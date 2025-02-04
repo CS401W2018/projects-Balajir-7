@@ -1,0 +1,48 @@
+body {
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: darkkhaki;
+}
+footer {
+    color: rgb(242, 12, 12);
+    background-color: darkgreen;
+}
+
+#firstpart {
+    color: darkorange;
+}
+
+.color {
+    color: darkmagenta;
+}
+.change {
+    color: darkred;
+}
+.blue{
+    color: rgb(8, 23, 236);
+}
+.bigger {
+      font-size: 20pt;
+}
+.underline {
+    text-decoration: underline;
+}
+
+nav {
+    color: blue;
+}
+.ittalic {
+    font-style: italic;
+}
+header {
+    background-color: darkgreen;
+}
+.blackbyui {
+    color: black;
+}
+.blueprovo {
+    color: blue;
+}
+
+.redbyuh {
+    color: red;
+}
