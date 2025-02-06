@@ -1,0 +1,36 @@
+body {
+    background-color: #FF6B6B;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+header {
+    color: #2C3E50;
+}
+footer {
+    color: #03546f;
+}
+.red {
+    color: darkred;
+}
+.vibrantyelloworange {
+    color: #FFD166;
+}
+.deepgreen {
+    color: #1E5631;
+}
+#para {
+    color: #003366;
+}
+
+.Helvetica {
+    font-style: calc(12);
+}
+.DarkNavy {
+    color: #1B263B;
+}
+.DarkPurple {
+    color: #0f0769;
+}
+.darkblue {
+    color: #003366;
+}
