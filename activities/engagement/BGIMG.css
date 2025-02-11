@@ -1,0 +1,18 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url("backgroundimage.jpg") darkgreen;
+    color: white;
+   /* 
+    background-color: aqua;
+    background-image: url(backgroundimage.jpg);
+    */
+}
+.mylist {
+    /* list-style-type: none; */
+    list-style-image: url(bluewave1.jpg);
+}
+
+header {
+    color: white;
+    background: url(bluewave1.jpg) top right no-repeat;
+}
