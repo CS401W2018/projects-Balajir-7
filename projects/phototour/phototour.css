@@ -1,0 +1,26 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(212, 31, 203);
+    background-image: url(background.jpg);
+    color:#3814c7;
+}
+.mylist {
+    list-style-image: url(diya.jpg);
+}
+main {
+    background: url(indiaflagenew.jpg) top right no-repeat;
+}
+nav a {
+    color: rgb(179, 3, 3);
+}
+.current {
+    color: rgb(31, 184, 87);
+}
+header {
+    background-image: url(diya.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+footer {
+    color: black;
+}
