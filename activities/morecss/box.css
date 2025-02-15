@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: aqua;
+    padding: 30px 10px;
+    margin-bottom: 25px;
+    width: 80%;
+    /*width: 70%;
+    height: 13cm;*/
+    overflow: visible;
+}
+
+header h1 {
+    border: 2px solid black;
+}
+.wave img {
+    width: 100%;
+}
+.wave {
+    width: 100px;
+    border: thin solid black;
+    text-align: center;
+    margin: 10px auto;
+}
