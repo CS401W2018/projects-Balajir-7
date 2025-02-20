@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a {
+    background-color:rgb(255, 0, 0);
+    display: block;
+    padding: 10px;
+    border-bottom: 3px solid #fff;
+}
+.moving {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+}
+.wave {
+    width: 80px;
+    border: thin solid #000;
+    box-shadow: 5px 5px 4px rgba(30, 30, 30, 5);
+    font-size: 20pt;
+   font-size: 8pt;
+}
+.floating {
+    float: right;
+
+}
+
+.wave img {
+    width: 100%;
+}
+.clear {
+    clear: both 
+}
