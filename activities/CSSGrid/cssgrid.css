@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                          "lside center rside"
+                          "footer footer footer";
+}
+
+nav {
+    grid-area: header;
+}
+header {
+    grid-area: header;
+}
+
+#lside {
+    grid-area: rside;
+    background-color: beige;
+}
+#rside {
+    grid-area: lside;
+    background-color: beige;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: center;
+}
+
+.parent {
+    background-color: aquamarine;
+    padding: 10px;
+    display: grid;
+    /* grid-template-rows: 15px 15px 15px ; */
+     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 15px 15px 33px; */
+    gap: 5px;
+}
+
+.child {
+    background-color: rgb(166, 85, 243);
+
+}
