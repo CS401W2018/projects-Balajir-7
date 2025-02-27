@@ -1,0 +1,34 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+nav a {
+    display: block;
+    background-color: aqua;
+    color: green;
+    padding: 5px 10px;
+}
+
+.featured {
+    order: -1; /*changes the ordes of the child */
+}
+.parent {
+    background-color: rgb(108, 219, 195);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    /* flex-direction: column; */
+}
+
+.child {
+    background-color: rgb(221, 221, 88);
+    width: 100px;
+    margin: 10px;
+}
