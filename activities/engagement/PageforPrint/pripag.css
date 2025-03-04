@@ -1,0 +1,53 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: #4dd3e2;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(116, 222, 148);
+}
+
+
+nav a { 
+    display: block;
+    padding: 10px;
+    background-color: rgb(31, 133, 67);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    border: thin solid black;
+    box-shadow: 3px 3px 3px;
+    width: 250px;
+}
+
+.card figure{
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
