@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1d1d1;
+}
+
+header {
+    background-color: #93c066;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    background-color: rgba(0, 200, 255, 0.566);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ba1818;
+}
+
+.parent {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #a9474779;
+    border-right: 1px solid #34327c;
+}
+
+.sidebar figure {
+    text-align: center;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article {
+    margin-bottom: 50px;
+    border: thick solid black;
+    width: 30%;
+    padding: 10px;
+}
+
+article figure {
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    text-align: left;
+    color: rgb(15, 5, 5);
+}
+
+@media only screen and (max-width: 700px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 1%;
+        text-align: center;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        font-size: 14px;
+    }
+
+    article {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        page-break-after: always;
+    }
+    
+}
