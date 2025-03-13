@@ -17,7 +17,9 @@
         <a href="#">Link 4</a>
     </nav>
     <main>
-        <table border="1">
+        <h1>Tables</h1>
+        <table class="Schedule">
+            <caption class="caption"><h2>Course Schedule</h2></caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -28,7 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="span">
                     <th colspan="5">Winter 2025</th>
                 </tr>
 
@@ -83,10 +85,8 @@
             </tfoot>    
         </table>
 
-        <p>1.Tables is used to arrange data in a rows and columns. </p>
-        <p>2.Should not use a table to layout elements on a page</p>
-        <p>3.When do you need to do extra work for table accessibility?  we dont need it when tables are used for data presantation and table structure is comples</p>
-
+        <p>Because it won't override if we use border attribute.</p>
+        <p>The easyest way is that we need to use "nth-child".</p>
         <!-- <p>optional tags <thead> 1st row (labels) </thead> <tbody> Data </tbody><tfoot> Averages, totals, summary of the data </tfoot></p> -->
 
     </main>
