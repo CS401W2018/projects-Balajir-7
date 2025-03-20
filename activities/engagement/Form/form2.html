@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>WEB DESIGN</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h1>Form</h1>
+        <form action="processing.thml" method="get">
+            <fieldset>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email" required="required">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass" placeholder="Password" required="required">
+                </div>
+                <div class="form-row">
+                    <label for="atate">States</label>
+                    <select name="states" id="states">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="UT">Utah</option>
+                        <option value="HI" selected>Hawaii</option>
+                    </select>
+                </div>   
+                <div class="radio-row">
+                    <div class="form-row">Year in School</div>
+                    <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="Shophmore"> Shophmore</label>
+                </div>    
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>    
+        </form>
+        <p>Styling input buttons, styling select menus, Styling Textareas. Aslo, Flex, grid and table.</p>
+        <p>Because it is easy to access and more flexable for the all the page. It also makes it to work according different screen size.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Balaji</p>
+    </footer>
+    
+</body>
+</html>

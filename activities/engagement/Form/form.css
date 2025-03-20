@@ -1,3 +1,67 @@
 body{
     font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+
+fieldset {
+    background-color: aqua;
+}
+
+legend{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.form-row input:not([type="sunmit"]) {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 179, 255, 0.639);
+}
+
+
+.form-row input:not([type="submit"]):focus {
+    background-color: rgb(210, 249, 37);
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: rgb(122, 229, 35);
+    color: rgb(0, 7, 12);
+}
+
+.form-row {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.form-row label {
+    width: 80px;
+    text-align: left;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.radio-row {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+@media only screen and (Max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+    
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-spacer {
+        text-align: left;
+    }
 }
