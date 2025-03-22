@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>FORM WEB DESIGN</h1>
+    </header>
+    
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required="required" placeholder="Enter your name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="required" placeholder="Enter your email">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required="required" placeholder="Enter your password">
+                </div>
+
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="gender">Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="blank"></option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+                </div>
+
+                <div class="form-row checkbox">
+                    <label><input type="checkbox" name="checkbox" required> checkbox</label>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Balaji</p>
+    </footer>
+</body>
+</html>
