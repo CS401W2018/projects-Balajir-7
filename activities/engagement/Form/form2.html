@@ -18,19 +18,23 @@
     </nav>
     <main>
         <h1>Form</h1>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <div class="form-row">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                    <input type="text" name="fullname"  placeholder="Full Name" id="fullname">
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Email" required="required">
+                    <input type="email" name="email" placeholder="Email" id="email">
                 </div>
                 <div class="form-row">
                     <label for="pass">Password:</label>
-                    <input type="password" name="password" id="pass" placeholder="Password" required="required">
+                    <input type="password" name="password" id="pass" placeholder="Password">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Age">
                 </div>
                 <div class="form-row">
                     <label for="atate">States</label>
@@ -60,12 +64,43 @@
                 </div>
             </fieldset>    
         </form>
-        <p>Styling input buttons, styling select menus, Styling Textareas. Aslo, Flex, grid and table.</p>
-        <p>Because it is easy to access and more flexable for the all the page. It also makes it to work according different screen size.</p>
+        <h1>Form Processing with JavaScript.</h1>
+        <p>1.It is a programming language. They named it after JAVA programming language. By sun microsyst namet it.</p>
+        <p>2. Java script is running on our broweser. 1. in the Dom. 2. nodejs (express.js) (Ruby)</p>
+        <p>3. In Earlier days jQuery was the popular front-end js library</p>
+        <p>4. Tody React.js is the most popular one.</p>
     </main>
     <footer>
         <p>&copy; 2025 Balaji</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname) {
+                alert("You need to enter your name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            };
+
+            console.log(formData)
+        });
+    </script>
     
 </body>
 </html>
