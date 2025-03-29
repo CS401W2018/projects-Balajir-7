@@ -69,38 +69,14 @@
         <p>2. Java script is running on our broweser. 1. in the Dom. 2. nodejs (express.js) (Ruby)</p>
         <p>3. In Earlier days jQuery was the popular front-end js library</p>
         <p>4. Tody React.js is the most popular one.</p>
+        <h1>Form Processing with AJAX</h1>
+        <p>AJAX preventsdefault and allows webpages to update the content without refreshing the entire page.</p>
+        <p>It improves the code organization, reusability, maintainablity and it makes the page loads performance faster. </p>
     </main>
     <footer>
         <p>&copy; 2025 Balaji</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const pass = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname) {
-                alert("You need to enter your name.");
-                return;
-            }
-
-            if (!age || age<18) {
-                alert("You need to be 18");
-                return;
-            }
-
-            const formData = {
-                fullname: fullname,
-                email: email,
-                password: pass
-            };
-
-            console.log(formData)
-        });
-    </script>
+        <script src="forms.js"></script>
     
 </body>
 </html>
