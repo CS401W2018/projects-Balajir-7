@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Processing</title>
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body>
+    <header>
+        <h1>Form Processing</h1>
+    </header>
+    <main>
+        
+        <form action="processing.html" method="get" id="form">
+            <fieldset>
+                <legend>Student Data</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname"  placeholder="Full Name" id="fullname">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass" placeholder="Password">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email" id="email">
+                </div>
+                
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Age">
+                </div>
+                <div class="form-row">
+                    <label for="state">States</label>
+                    <select name="states" id="states">
+                        <option value="blank">Select</option>
+                        <option value="CO">Colorado</option>
+                        <option value="UT">Utah</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+                </div>   
+                <div class="radio-row">
+                    <div class="form-row">Year in School</div>
+                    <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="Shophmore"> Shophmore</label>
+                </div>    
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+
+    </main>
+    <footer>
+        <p>&copy;2025 Balaji</p>
+    </footer>
+    <script src="formp.js"></script>
+</body>
+</html>
