@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>France - Voyage Ventures</title>
+    <title>Canada - Voyage Ventures</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +16,14 @@
     <nav>
         <a href="../homepage.html">Home</a>
         <a href="../destinations.html">Destinations</a>
+        <a href="../travel-buddy.html">Travel Buddy</a>
         <a href="../hotels.html">Hotels</a>
         <a href="../contact.html">Contact</a>
+
+        <div class="search">
+            <label for="search-country"></label>
+            <input type="text" id="search-country" placeholder="Enter country name">
+        </div>
     </nav>
 
     <main>
@@ -25,46 +31,48 @@
             <h2>Top Tourist Attractions in Canada</h2>
             <p>Explore the top places to visit in Canada, from stunning natural wonders to vibrant cities. Discover the diverse beauty of this magnificent country!</p>
 
-            <div class="tourist-spot">
-                <h3>Niagara Falls</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/375px-3Falls_Niagara.jpg" alt="Niagara Falls" class="spot-img">
-                <p>Niagara Falls, one of the most iconic natural wonders in the world, is a breathtaking sight with its thundering waterfalls that straddle the border between Canada and the USA. Visitors can enjoy boat tours that take them close to the falls or explore the surrounding parks for stunning views.</p>
-            </div>
-
-            <div class="tourist-spot">
-                <h3>Banff National Park</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/500px-Moraine_Lake_17092005.jpg" alt="Banff National Park" class="spot-img">
-                <p>Located in the heart of the Canadian Rockies, Banff National Park offers jaw-dropping mountain scenery, crystal-clear lakes, and diverse wildlife. The park is perfect for hiking, skiing, and enjoying hot springs amidst some of the most pristine nature in the world.</p>
-            </div>
-
-            <div class="tourist-spot">
-                <h3>Old Quebec City</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jardins_de_l_hotel_de_ville_de_Quebec_-_06.jpg/330px-Jardins_de_l_hotel_de_ville_de_Quebec_-_06.jpg" alt="Old Quebec City" class="spot-img">
-                <p>A UNESCO World Heritage site, Old Quebec City is known for its charming cobblestone streets, historic architecture, and the iconic Château Frontenac. It provides a glimpse into Canada’s colonial past, blending French heritage with modern culture.</p>
-            </div>
-
-            <div class="tourist-spot">
-                <h3>CN Tower</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Toronto_-_ON_-_Toronto_Harbourfront7.jpg/375px-Toronto_-_ON_-_Toronto_Harbourfront7.jpg" alt="CN Tower" class="spot-img">
-                <p>The CN Tower, once the world's tallest free-standing structure, offers panoramic views of Toronto's skyline and Lake Ontario. For thrill-seekers, the SkyPod and EdgeWalk provide unique, vertigo-inducing experiences.</p>
-            </div>
-
-            <div class="tourist-spot">
-                <h3>Stanley Park</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Stanley_Park_Labeled_Aerial_Map.png/413px-Stanley_Park_Labeled_Aerial_Map.png" alt="Stanley Park" class="spot-img">
-                <p>Stanley Park, a lush urban oasis in Vancouver, is famous for its scenic seawall, dense forests, and views of the surrounding mountains. It's ideal for biking, hiking, and enjoying waterfront views while being close to the city."</p>
-            </div>
-
-            <div class="tourist-spot">
-                <h3>Prince Edward Island</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Prince_Edward_Island_by_Sentinel-2%2C_2020-09-05_%28small_version%29.jpg/330px-Prince_Edward_Island_by_Sentinel-2%2C_2020-09-05_%28small_version%29.jpg" alt="Prince Edward Island" class="spot-img">
-                <p>Prince Edward Island Known for its red sandy beaches and rolling countryside, Prince Edward Island is a peaceful retreat with a rich cultural history. It’s especially famous for being the setting of Anne of Green Gables and offers visitors charming small towns and scenic coastal landscapes."</p>
-            </div>
-
             
+            <div class="tourist-spot-container">
+                <div class="tourist-spot">
+                    <h3>Niagara Falls</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/375px-3Falls_Niagara.jpg" alt="Niagara Falls" class="spot-img">
+                    <p>Niagara Falls, one of the most iconic natural wonders in the world, is a breathtaking sight with its thundering waterfalls that straddle the border between Canada and the USA. Visitors can enjoy boat tours that take them close to the falls or explore the surrounding parks for stunning views.</p>
+                </div>
+
+                <div class="tourist-spot">
+                    <h3>Banff National Park</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/500px-Moraine_Lake_17092005.jpg" alt="Banff National Park" class="spot-img">
+                    <p>Located in the heart of the Canadian Rockies, Banff National Park offers jaw-dropping mountain scenery, crystal-clear lakes, and diverse wildlife. The park is perfect for hiking, skiing, and enjoying hot springs amidst some of the most pristine nature in the world.</p>
+                </div>
+
+                <div class="tourist-spot">
+                    <h3>Old Quebec City</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jardins_de_l_hotel_de_ville_de_Quebec_-_06.jpg/330px-Jardins_de_l_hotel_de_ville_de_Quebec_-_06.jpg" alt="Old Quebec City" class="spot-img">
+                    <p>A UNESCO World Heritage site, Old Quebec City is known for its charming cobblestone streets, historic architecture, and the iconic Château Frontenac. It provides a glimpse into Canada's colonial past, blending French heritage with modern culture.</p>
+                </div>
+
+                <div class="tourist-spot">
+                    <h3>CN Tower</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Toronto_-_ON_-_Toronto_Harbourfront7.jpg/375px-Toronto_-_ON_-_Toronto_Harbourfront7.jpg" alt="CN Tower" class="spot-img">
+                    <p>The CN Tower, once the world's tallest free-standing structure, offers panoramic views of Toronto's skyline and Lake Ontario. For thrill-seekers, the SkyPod and EdgeWalk provide unique, vertigo-inducing experiences.</p>
+                </div>
+
+                <div class="tourist-spot">
+                    <h3>Stanley Park</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Stanley_Park_Labeled_Aerial_Map.png/413px-Stanley_Park_Labeled_Aerial_Map.png" alt="Stanley Park" class="spot-img">
+                    <p>Stanley Park, a lush urban oasis in Vancouver, is famous for its scenic seawall, dense forests, and views of the surrounding mountains. It's ideal for biking, hiking, and enjoying waterfront views while being close to the city.</p>
+                </div>
+
+                <div class="tourist-spot">
+                    <h3>Prince Edward Island</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Prince_Edward_Island_by_Sentinel-2%2C_2020-09-05_%28small_version%29.jpg/330px-Prince_Edward_Island_by_Sentinel-2%2C_2020-09-05_%28small_version%29.jpg" alt="Prince Edward Island" class="spot-img">
+                    <p>Known for its red sandy beaches and rolling countryside, Prince Edward Island is a peaceful retreat with a rich cultural history. It's especially famous for being the setting of Anne of Green Gables and offers visitors charming small towns and scenic coastal landscapes.</p>
+                </div>
+            </div>
+
             <section id="tourist-info">
-                <h2>Tourist Information of France's Popular places</h2>
-                <p>Some of the most visited tourist places in France, including the best time to visit, entry fees, and top activities.</p>
+                <h2>Tourist Information for Canada's Popular Places</h2>
+                <p>Some of the most visited tourist places in Canada, including the best time to visit, entry fees, and top activities.</p>
                 
                 <table>
                     <caption>Tourist Information for Top Canadian Destinations</caption>
@@ -116,6 +124,9 @@
                     </tbody>
                 </table>
             </section>
+            <h3>References</h2>
+                <p class="ref"><a href="https://en.wikipedia.org/wiki/Wiki">wikipedia</a></p>
+                <p class="ref"><a href="https://images.google.com/">Google Images</a></p>
         </section>
     </main>
 
